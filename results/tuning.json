@@ -1,0 +1,50 @@
+[
+  {
+    "model": "ItemCF",
+    "split": "validation_tuning",
+    "users": 492,
+    "Recall@10": 0.055595596581060114,
+    "NDCG@10": 0.13932086757579656,
+    "HitRate@10": 0.4166666666666667,
+    "config": {
+      "neighbors": 40
+    },
+    "seconds": 0.5222714999690652
+  },
+  {
+    "model": "ItemCF",
+    "split": "validation_tuning",
+    "users": 492,
+    "Recall@10": 0.05380803749801791,
+    "NDCG@10": 0.1399671971467991,
+    "HitRate@10": 0.41260162601626016,
+    "config": {
+      "neighbors": 80
+    },
+    "seconds": 0.5331325996667147
+  },
+  {
+    "model": "LightGBM",
+    "split": "validation_tuning",
+    "users": 492,
+    "Recall@10": 0.0489981281265822,
+    "NDCG@10": 0.1268162452806687,
+    "HitRate@10": 0.42073170731707316,
+    "config": {
+      "num_leaves": 31
+    },
+    "seconds": 8.02793370001018
+  },
+  {
+    "model": "LightGBM",
+    "split": "validation_tuning",
+    "users": 492,
+    "Recall@10": 0.04776629749791074,
+    "NDCG@10": 0.1257541460768195,
+    "HitRate@10": 0.4146341463414634,
+    "config": {
+      "num_leaves": 63
+    },
+    "seconds": 9.039257199969143
+  }
+]

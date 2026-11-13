@@ -1,0 +1,12 @@
+data/
+artifacts/
+work/
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+.env
+*.log
+results/recommendations.csv
+results/per_user_metrics.csv
+.vscode/settings.json

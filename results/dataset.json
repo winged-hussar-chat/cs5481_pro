@@ -1,0 +1,21 @@
+{
+  "sha256": "a6898adb50b9ca05aa231689da44c217cb524e7ebd39d264c56e2832f2c54e20",
+  "ratings": 1000209,
+  "users": 6040,
+  "movies_in_metadata": 3883,
+  "rated_movies": 3706,
+  "train_catalog_size": 3662,
+  "splits": {
+    "train": 800168,
+    "val": 100020,
+    "test": 100021
+  },
+  "cutoffs_utc": [
+    "2000-12-02 14:52:18+00:00",
+    "2000-12-29 23:42:56+00:00"
+  ],
+  "relevance": "rating >= 4",
+  "seed": 42,
+  "duplicates": 0,
+  "density": 0.044683625622312845
+}

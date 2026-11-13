@@ -1,0 +1,7 @@
+{
+  "version":"2.0.0",
+  "tasks":[
+    {"label":"Train three recommenders","type":"process","command":"${command:python.interpreterPath}","args":["-m","src.train","--epochs","12"],"options":{"cwd":"${workspaceFolder}"},"problemMatcher":[]},
+    {"label":"Test recommenders","type":"process","command":"${command:python.interpreterPath}","args":["-m","pytest","-q"],"options":{"cwd":"${workspaceFolder}"},"problemMatcher":[]}
+  ]
+}

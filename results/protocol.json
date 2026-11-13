@@ -1,0 +1,50 @@
+{
+  "seed": 42,
+  "device": "cuda",
+  "torch": "2.11.0+cu128",
+  "python": "3.12.6",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "elapsed_seconds": 54.23272420000285,
+  "validation": {
+    "total_relevant_users": 1103,
+    "evaluated_users": 492,
+    "unknown_item_positive_rows": 5,
+    "protocol": "Warm-start users and train-catalog items; all candidates, train-rated items excluded"
+  },
+  "test": {
+    "total_relevant_users": 1188,
+    "evaluated_users": 990,
+    "unknown_item_positive_rows": 50,
+    "protocol": "Warm-start users and train-catalog items; all candidates, train-rated items excluded"
+  },
+  "tuning_users": 492,
+  "selected_cf_neighbors": 80,
+  "selected_lgb_leaves": 31,
+  "lgb_training": {
+    "rows": 446442,
+    "positives": 89329,
+    "inner_cutoff": 974737550,
+    "negatives_per_positive": 4,
+    "feature_count": 45
+  },
+  "lru": {
+    "hidden": 32,
+    "blocks": 2,
+    "max_len": 64,
+    "batch_size": 32,
+    "best_epoch": 1,
+    "epochs_run": 4,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "patience": 3
+  },
+  "upstream_commit": "e02a559bd8c42342f5c53d69cefea2589becb22c",
+  "limitations": [
+    "Warm-start evaluation excludes customers without positive training history.",
+    "Training-only catalog excludes unseen held-out items.",
+    "LRURec uses 64-step windows by default, not the paper default 200.",
+    "LightGBM uses fixed inner-training metadata/history features and sampled negatives.",
+    "Validation observations are not appended to test histories; all models remain frozen.",
+    "CUDA kernels may introduce small nondeterministic differences."
+  ]
+}

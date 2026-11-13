@@ -1,0 +1,13 @@
+table,column,rows,dtype,nulls,unique
+ratings,user_id,1000209,int64,0,6040
+ratings,movie_id,1000209,int64,0,3706
+ratings,rating,1000209,int64,0,5
+ratings,timestamp,1000209,int64,0,458455
+movies,movie_id,3883,int64,0,3883
+movies,title,3883,str,0,3883
+movies,genres,3883,str,0,301
+users,user_id,6040,int64,0,6040
+users,gender,6040,str,0,2
+users,age,6040,int64,0,7
+users,occupation,6040,int64,0,21
+users,zip_code,6040,str,0,3439

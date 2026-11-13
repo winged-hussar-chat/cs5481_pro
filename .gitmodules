@@ -1,0 +1,3 @@
+[submodule "vendor/LRURec"]
+	path = vendor/LRURec
+	url = https://github.com/yueqirex/LRURec.git

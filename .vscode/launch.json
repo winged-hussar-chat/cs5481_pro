@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "Movie recommendation app", "type": "debugpy", "request": "launch", "module": "streamlit", "args": ["run", "app.py"], "console": "integratedTerminal", "cwd": "${workspaceFolder}"},
+    {"name": "Train all three models", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--epochs", "12"], "console": "integratedTerminal", "cwd": "${workspaceFolder}"}
+  ]
+}
